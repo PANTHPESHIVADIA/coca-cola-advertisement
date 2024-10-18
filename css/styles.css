@@ -1,0 +1,366 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.display-4-1
+{
+    margin-right: 430px;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: #333; 
+    text-decoration: none; 
+    margin: 0 1rem; 
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline; 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #333;
+    color: #f7f7f7;
+    padding: 4rem 0;
+}
+
+.testimonials blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    position: relative;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #ffeb3b;
+}
+
+.testimonials blockquote::before {
+    content: open-quote;
+    font-size: 2rem;
+    color: #ffeb3b;
+    position: absolute;
+    left: -1.5rem;
+}
+
+.testimonials blockquote:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* footer*/
+.footer {
+    background-color: #cc0000;
+    color: white;
+}
+
+.d-block
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Heading Styles */
+h1, h3 {
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #cc0000;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem; 
+    font-weight: 400;
+}
+
+/* Emphasized Text */
+p.lead {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #333; 
+}
+
+/* Section Titles */
+.display-4 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #d32f2f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Link Styling within Text */
+a {
+    font-weight: 500;
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #b71c1c; 
+}
+
+/* Additional Spacing for Text Sections */
+h1, h3, p {
+    margin-bottom: 1.5rem;
+}
+
+/* Banner Styling */
+.banner {
+    background: url('../images/coca-cola-banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    animation: fadeInDown 1.5s ease;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 2s ease;
+}
+
+.banner .btn {
+    padding: 12px 40px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    animation: fadeInUp 2.5s ease;
+}
+
+.about h2, .products h1 {
+    font-weight: bold;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Social Media Enhancements */
+.social-media .btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.social-media .btn:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Card Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* General Image Styling */
+.card-img-top {
+    width: 60px;
+    height: 60px; 
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Scale image on hover */
+.card-img-top:hover {
+    transform: scale(1.05); 
+}
+
+/* Additional styling for the image section */
+.product-img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.product-img:hover {
+    filter: brightness(0.9); 
+    transition: filter 0.3s ease;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.img-fluid
+{
+    width: 100%; 
+    height: 500px;
+    object-fit: cover; 
+    border-radius: 10px; 
+    float: left;
+}
+.img-fluid-1
+{
+    width: 100%; 
+    height: 350px;
+    object-fit: cover; 
+    border-radius: 10px; 
+    float: left;
+}
+
+/* Buttons and Hover Effects */
+button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b71c1c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #b71c1c;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    .about h2, .products h1 {
+        font-size: 2rem;
+    }
+
+    .testimonials blockquote {
+        font-size: 1rem;
+    }
+
+    .banner {
+        height: 60vh;
+    }
+
+    .social-media .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+}
+
+/* Additional Spacing */
+.py-5 {
+    padding-top: 3rem !important; 
+    padding-bottom: 3rem !important;
+}
+
+.section-bg {
+    background-color: lightgrey; /* White background */
+    padding: 20px;
+}

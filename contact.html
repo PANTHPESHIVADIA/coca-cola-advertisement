@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <img src="images/coca-cola-logo.jpg" class="card-img-top" width="40" height="40" alt="Coca-Cola">
+        <a class="navbar-brand" href="index.html">Coca-Cola</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="display-4 text-center">Get in Touch</h1>
+            <form id="contactForm" action="contact_process.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPhone">Phone Number</label>
+                        <input type="text" class="form-control" id="inputPhone" name="inputPhone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputSubject">Subject</label>
+                        <input type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea class="form-control" id="inputMessage" name="inputMessage" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="inputAgreement" name="inputAgreement" required>
+                    <label class="form-check-label" for="inputAgreement">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media py-5 text-center">
+        <div class="container">
+            <h2 class="display-4">Follow Us on Social Media</h2>
+            <p>Stay connected with Coca-Cola for the latest news and updates!</p>
+            <a href="https://www.facebook.com/CocaCola" class="btn btn-primary mx-2">Facebook</a>
+            <a href="https://www.twitter.com/CocaCola" class="btn btn-info mx-2">Twitter</a>
+            <a href="https://www.instagram.com/CocaCola" class="btn btn-danger mx-2">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-danger text-white py-3 text-center">
+        <p>&copy; 2024 Coca-Cola. All Rights Reserved.</p>
+        <p>Contact us: <a href="mailto:panth&karan@gmail.com" class="text-white">panth&karan@gmail.com</a> | Phone: (+91) 9122329123</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

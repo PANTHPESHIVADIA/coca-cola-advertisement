@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Coca-Cola</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <img src="images/coca-cola-logo.jpg" class="card-img-top" width="40" height="40" alt="Coca-Cola">
+        <a class="navbar-brand" href="index.html">
+            Coca-Cola
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="sustainability.html">Sustainability</a></li>
+                <li class="nav-item"><a class="nav-link" href="innovation.html">Innovation</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="display-4 text-center">Our Story</h1>
+            <p class="lead text-center">Coca-Cola was invented in 1886 by pharmacist John Stith Pemberton in Atlanta, Georgia. It became the world’s most popular soft drink thanks to its unique taste, clever advertising, and a passion for innovation.</p>
+            
+            <!-- Tab Navigation -->
+            <ul class="nav nav-tabs mt-5" id="aboutTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="global-reach-tab" data-toggle="tab" href="#global-reach" role="tab" aria-controls="global-reach" aria-selected="true">Global Reach</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="popular-culture-tab" data-toggle="tab" href="#popular-culture" role="tab" aria-controls="popular-culture" aria-selected="false">Popular Culture</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-3" id="aboutTabContent">
+                <div class="tab-pane fade show active" id="global-reach" role="tabpanel" aria-labelledby="global-reach-tab">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <img src="images/coca-cola-history.webp" class="img-fluid-1" alt="Coca-Cola History">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Our Global Reach</h3>
+                            <p>
+                                Coca-Cola operates in over 200 countries, serving 1.9 billion drinks daily. With more than 500 brands, it tailors products to local tastes, from Fanta Exotic in Africa to Ayataka Tea in Japan. Partnering with 250 bottlers, it produces locally to meet regional needs. Through its World Without Waste initiative, Coca-Cola aims to recycle every bottle it sells by 2030, reflecting its commitment to sustainability. Globally, it contributes to local economies, providing jobs and supporting community development through education, health, and empowerment initiatives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="popular-culture" role="tabpanel" aria-labelledby="popular-culture-tab">
+                    <h3 class="text-center">Coca-Cola and Popular Culture</h3>
+                    <p class="lead text-center">Coca-Cola is more than a beverage; it has become a symbol of happiness, joy, and celebration. The iconic logo and bottle shape are instantly recognizable worldwide. Coca-Cola has been a pop culture icon for over a century, featuring in movies, music, and art. The brand's iconic Santa Claus ads helped shape the modern image of Santa, and its "I'd Like to Buy the World a Coke" campaign became a cultural milestone. Coca-Cola’s recognizable logo and bottle design are symbols of global pop culture, making appearances in everything from Andy Warhol's art to major films.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- History Timeline Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4 text-center">Timeline of Coca-Cola</h2>
+            <ul class="list-group mt-4">
+                <li class="list-group-item"><strong>1886:</strong> Coca-Cola is invented by John Stith Pemberton.</li>
+                <li class="list-group-item"><strong>1892:</strong> The Coca-Cola Company is founded.</li>
+                <li class="list-group-item"><strong>1915:</strong> The contour bottle is introduced, becoming an iconic symbol.</li>
+                <li class="list-group-item"><strong>1985:</strong> Coca-Cola introduces "New Coke," which is later reverted back.</li>
+                <li class="list-group-item"><strong>2009:</strong> Coca-Cola celebrates its 123rd anniversary.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media py-5 text-center">
+        <div class="container">
+            <h2 class="display-4">Follow Us on Social Media</h2>
+            <p>Stay connected with Coca-Cola for the latest news and updates!</p>
+            <a href="https://www.facebook.com/CocaCola" class="btn btn-primary mx-2">Facebook</a>
+            <a href="https://www.twitter.com/CocaCola" class="btn btn-info mx-2">Twitter</a>
+            <a href="https://www.instagram.com/CocaCola" class="btn btn-danger mx-2">Instagram</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer bg-danger text-white py-3 text-center">
+        <div>
+            <p>&copy; 2024 Coca-Cola. All Rights Reserved.</p>
+            <p>Contact us: <a href="mailto:your-email@example.com" class="text-white">panth&karan@gmail.com</a> | Phone: (+91) 9122329123</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
